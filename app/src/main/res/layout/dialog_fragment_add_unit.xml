@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/margin_padding_haft"
+        android:paddingStart="@dimen/margin_padding_default">
+
+        <TextView
+            android:id="@+id/tvUnitTitleName"
+            style="@style/FontHeaderTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/edit_unit_title"
+            android:textColor="@color/colorWhite" />
+
+        <android.support.v7.widget.AppCompatImageView
+            app:srcCompat="@drawable/ic_close_white_24dp"
+            android:id="@+id/ivCloseAddUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/margin_padding_haft" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:minHeight="@dimen/min_height_edittext_add_unit"
+        android:padding="@dimen/margin_padding_default">
+
+        <EditText
+            android:id="@+id/etInputUnit"
+            style="@style/FontBodyTextRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="@string/edittext_add_unit_hint"
+            android:inputType="text"
+            android:textColor="@color/colorBlack" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhiteSmoke"
+        android:gravity="end|center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_padding_haft"
+        android:paddingEnd="@dimen/margin_padding_default"
+        android:paddingStart="@dimen/margin_padding_default"
+        android:paddingTop="@dimen/margin_padding_haft">
+
+        <Button
+            android:id="@+id/btnCancelAddUnit"
+            style="@style/FontButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_min_height"
+            android:layout_marginEnd="@dimen/margin_padding_default"
+            android:background="@drawable/bg_light_button_color_red"
+            android:text="@string/cancel"
+            android:textColor="@color/colorRed" />
+
+        <Button
+            android:id="@+id/btnSaveAddUnit"
+            style="@style/FontButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_min_height"
+            android:background="@drawable/bg_primary_button"
+            android:text="@string/action_save"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+</LinearLayout>

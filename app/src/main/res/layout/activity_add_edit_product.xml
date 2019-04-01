@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editproduct.EditProductActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/ivBackButton"
+            android:layout_width="@dimen/circle_size"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/margin_padding_haft"
+            app:srcCompat="@drawable/ic_arrow_back_white_24dp" />
+
+        <TextView
+            android:id="@+id/tvAddEditTitle"
+            style="@style/FontHeaderTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/add_edit_add_new_text"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/tvSaveButton"
+            style="@style/FontButton"
+            android:layout_width="@dimen/circle_size"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_padding_haft"
+            android:text="@string/action_save"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_padding_haft"
+                android:paddingEnd="@dimen/margin_padding_default"
+                android:paddingStart="@dimen/margin_padding_default"
+                android:paddingTop="@dimen/margin_padding_haft"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    style="@style/FontCaption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_product_hint"
+                    android:textColor="@color/colorGray" />
+
+                <TextView
+                    style="@style/FontCaption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_padding_vertical_tiny"
+                    android:text="@string/star_red"
+                    android:textColor="@color/colorRed" />
+
+                <EditText
+                    android:id="@+id/etProductName"
+                    style="@style/FontBodyTextRegular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_padding_haft"
+                    android:layout_marginStart="@dimen/margin_padding_default"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="end"
+                    android:hint="@string/name_product_hint_edittext"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <include layout="@layout/border_line" />
+
+            <LinearLayout
+                android:id="@+id/llPriceProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_select"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_padding_haft"
+                android:paddingEnd="@dimen/margin_padding_default"
+                android:paddingStart="@dimen/margin_padding_default"
+                android:paddingTop="@dimen/margin_padding_haft"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    style="@style/FontCaption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_product_label"
+                    android:textColor="@color/colorGray" />
+
+                <TextView
+                    android:id="@+id/tvPriceProduct"
+                    style="@style/FontBodyTextRegular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_padding_default"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorBlack" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    app:srcCompat="@drawable/ic_chevron_right_gray_24dp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/border_line" />
+
+            <LinearLayout
+                android:id="@+id/llUnitProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_padding_haft"
+                android:paddingEnd="@dimen/margin_padding_default"
+                android:paddingStart="@dimen/margin_padding_default"
+                android:paddingTop="@dimen/margin_padding_haft"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    style="@style/FontCaption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/product_unit_label"
+                    android:textColor="@color/colorGray" />
+
+                <TextView
+                    style="@style/FontCaption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_padding_vertical_tiny"
+                    android:text="@string/star_red"
+                    android:textColor="@color/colorRed" />
+
+
+                <TextView
+                    android:id="@+id/tvUnitProduct"
+                    style="@style/FontBodyTextRegular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_padding_default"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorBlack" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    app:srcCompat="@drawable/ic_chevron_right_gray_24dp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/border_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_haft"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/margin_padding_default"
+                android:paddingStart="@dimen/margin_padding_default">
+
+                <TextView
+                    style="@style/FontCaption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/product_color_label"
+                    android:textColor="@color/colorGray" />
+
+                <RelativeLayout
+                    android:id="@+id/rlColorContainer"
+                    android:layout_width="@dimen/circle_size"
+                    android:layout_height="@dimen/circle_size"
+                    android:layout_marginStart="@dimen/margin_padding_default"
+                    android:background="@drawable/bg_circle"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ivProductColor"
+                        android:layout_width="@dimen/image_circle_size"
+                        android:layout_height="@dimen/image_circle_size"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/ic_color_lens_white_24dp" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/FontCaption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_padding_default"
+                    android:text="@string/product_thumbnail_label"
+                    android:textColor="@color/colorGray" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rlThumbnailContainer"
+                    android:layout_width="@dimen/circle_size"
+                    android:layout_height="@dimen/circle_size"
+                    android:layout_marginStart="@dimen/margin_padding_default"
+                    android:background="@drawable/bg_circle"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ivProductThumbnail"
+                        android:layout_width="@dimen/image_circle_size"
+                        android:layout_height="@dimen/image_circle_size"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/ic_add_white_24dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llStatus"
+                android:layout_marginTop="@dimen/margin_padding_default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_padding_haft"
+                android:paddingEnd="@dimen/margin_padding_default"
+                android:paddingStart="@dimen/margin_padding_default"
+                android:paddingTop="@dimen/margin_padding_haft"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    style="@style/FontCaption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status_product"
+                    android:textColor="@color/colorGray" />
+
+                <CheckBox
+                    android:id="@+id/cbProductStatus"
+                    style="@style/FontBodyTextRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_padding_haft"
+                    android:text="@string/product_status_sale_off" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/margin_padding_default"
+        android:paddingStart="@dimen/margin_padding_default">
+
+        <Button
+            android:id="@+id/btnDelete"
+            style="@style/ButtonAppStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_min_height"
+            android:layout_weight="1"
+            android:background="@drawable/bg_red_button"
+            android:text="@string/delete_button_text" />
+
+        <Button
+            android:id="@+id/btnSaveBottom"
+            style="@style/ButtonAppStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_min_height"
+            android:layout_weight="1"
+            android:background="@drawable/bg_primary_button"
+            android:text="@string/action_save" />
+    </LinearLayout>
+
+</RelativeLayout>

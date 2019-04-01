@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhiteSmoke"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingEnd="4dp"
+    android:paddingStart="4dp">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcvItemsList"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/FontButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:text="@string/cancel"
+            android:textColor="@color/colorPrimary" />
+    </RelativeLayout>
+
+</LinearLayout>

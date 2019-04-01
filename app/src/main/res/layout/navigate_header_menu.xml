@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/min_height_nav_header"
+    android:background="@drawable/bg_nav_header"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_padding_haft"
+    android:paddingEnd="@dimen/margin_padding_vertical_tiny"
+    android:paddingStart="@dimen/margin_padding_vertical_tiny"
+    android:paddingTop="@dimen/margin_padding_default"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civAvatarDefault"
+            android:layout_width="@dimen/avatar_size"
+            android:layout_height="@dimen/avatar_size"
+            android:layout_margin="@dimen/margin_padding_haft"
+            android:src="@drawable/img_default_avatar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/btnLogin"
+                style="@style/FontBodyTextRegular"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_min_height"
+                android:layout_margin="@dimen/margin_padding_haft"
+                android:layout_weight="1"
+                android:background="@drawable/bg_dark_primary_button"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/login_btn_name"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/btnSignUp"
+                style="@style/FontBodyTextRegular"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_min_height"
+                android:layout_margin="@dimen/margin_padding_haft"
+                android:layout_weight="1"
+                android:background="@drawable/bg_green_button"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/signup_btn_name"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

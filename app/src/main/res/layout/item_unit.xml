@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="@drawable/item_select"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/margin_padding_haft"
+    android:paddingEnd="@dimen/margin_padding_default"
+    android:paddingStart="@dimen/margin_padding_default"
+    android:paddingTop="@dimen/margin_padding_haft">
+
+    <ImageView
+        android:id="@+id/ivSelected"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/zero"
+        app:srcCompat="@drawable/ic_tick" />
+
+    <TextView
+        android:id="@+id/tvUnitName"
+        style="@style/FontBodyTextRegular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_padding_default"
+        android:layout_marginStart="@dimen/margin_padding_default"
+        android:layout_weight="1"
+        android:text="@string/app_name"
+        android:textColor="@color/colorBlack" />
+
+    <ImageView
+        android:id="@+id/ivUnitItemEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/zero"
+        app:srcCompat="@drawable/ic_pencil" />
+</LinearLayout>

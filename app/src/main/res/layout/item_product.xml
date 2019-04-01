@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/item_select"
+    android:focusable="true"
+    android:clickable="true"
+    android:paddingBottom="@dimen/margin_padding_haft"
+    android:paddingEnd="@dimen/margin_padding_haft"
+    android:paddingStart="@dimen/margin_padding_default"
+    android:paddingTop="@dimen/margin_padding_haft">
+
+    <RelativeLayout
+        android:id="@+id/rlIconContainer"
+        android:layout_width="@dimen/circle_size"
+        android:layout_height="@dimen/circle_size"
+        android:background="@drawable/bg_circle"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/ivProductIcon"
+            android:layout_width="@dimen/image_circle_size"
+            android:layout_height="@dimen/image_circle_size"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_launcher_background" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="@dimen/margin_padding_default"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvProductName"
+            style="@style/FontBodyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/app_name"
+            android:textColor="@color/colorBlack" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_padding_vertical_tiny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvProductPrice"
+                style="@style/FontCaption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/app_name"
+                android:textColor="@color/colorGray" />
+
+            <TextView
+                android:id="@+id/tvSaleOffStatus"
+                style="@style/FontBodyTextOverline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="@dimen/margin_padding_haft"
+                android:background="@drawable/bg_red_radius"
+                android:text="@string/sale_off_status"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/ic_chevron_right_gray_24dp" />
+
+</LinearLayout>

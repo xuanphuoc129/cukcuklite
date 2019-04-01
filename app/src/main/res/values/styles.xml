@@ -1,0 +1,84 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:fontFamily">@font/roboto_regular</item>
+
+    </style>
+
+    <style name="ButtonAppStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_margin">@dimen/margin_padding_haft</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/font_button</item>
+    </style>
+
+    <style name="ActionButtonToolbarStyle" parent="Widget.AppCompat.ActionButton">
+        <item name="textAllCaps">true</item>
+    </style>
+
+
+    <style name="FontBodyTitle">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/font_body_title</item>
+    </style>
+
+    <style name="FontBodyTextRegular">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/font_body_text</item>
+    </style>
+
+    <style name="FontBodyTextOverline">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/font_overline</item>
+    </style>
+
+    <style name="FontBodyTextItalic">
+        <item name="android:fontFamily">@font/roboto_italic</item>
+        <item name="android:textSize">@dimen/font_body_text</item>
+    </style>
+
+    <style name="FontHeaderTitle">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/font_title_header</item>
+    </style>
+
+    <style name="FontHeaderSubTitle1">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/font_subtile_header1</item>
+    </style>
+
+    <style name="FontHeaderSubTitle2">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/font_subtile_header2</item>
+    </style>
+
+    <style name="FontButton">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/font_button</item>
+    </style>
+
+    <style name="FontCaption">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/font_caption</item>
+    </style>
+
+
+</resources>
